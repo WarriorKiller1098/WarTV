@@ -15,7 +15,7 @@ http.createServer(function(req, res) {
     if (path == "/") {
         sendf(res, "index.html");
     }
-}}).listen(port);
+}).listen(port);
 
 function sendf(res, file) {
     res.write(fs.readFileSync(__dirname + "/" + file));
