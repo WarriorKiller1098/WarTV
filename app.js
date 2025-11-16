@@ -13,9 +13,9 @@ http.createServer(function(req, res) {
         query = parsedpath.split("?")[1].replace("?", "")
     }
     console.log("Method requested: " + req.method + ", with endpoint " + path);
-      if (path == "/") {
+    if (path == "/") {
         sendf(res, "index.html");
-      }
+    }
 }}).listen(port);
 
 function sendf(res, file) {
