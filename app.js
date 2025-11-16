@@ -2,7 +2,6 @@ const url = require("url")
 const http = require("http") 
 const port = 10000
 const fs = require("fs") 
-const { MongoClient, ServerApiVersion } = require('mongodb');
 
 http.createServer(function(req, res) {
     const urlpath = url.parse(req.url, true) 
