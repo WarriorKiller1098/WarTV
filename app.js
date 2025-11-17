@@ -15,7 +15,8 @@ http.createServer(function(req, res) {
     if (path == "/") {
         sendf(res, "index.html");
     } else if (path == "/news") {
-        res.write("The server is sending this text.")
+        res.write("The server is sending this text.");
+        res.end();
     }
 }).listen(port);
 
