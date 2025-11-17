@@ -14,6 +14,8 @@ http.createServer(function(req, res) {
     console.log("Method requested: " + req.method + ", with endpoint " + path);
     if (path == "/") {
         sendf(res, "index.html");
+    } else if (path == "/news") {
+        res.write("The server is sending this text.")
     }
 }).listen(port);
 
