@@ -15,7 +15,7 @@ http.createServer(function(req, res) {
     if (path == "/") {
         sendf(res, "index.html");
     } else if (path == "/news") {
-        res.write("The server is sending this text.");
+        res.write("Hi man you suck balls");
         res.end();
     } else if (path == "/admin") {
         sendf(res, "admin.html");
